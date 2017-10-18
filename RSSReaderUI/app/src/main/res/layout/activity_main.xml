@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="a06.csie.cjcu.rssreaderui.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="RSS : "
+        android:id="@+id/mytest"
+        android:layout_alignBottom="@+id/RSS_Edit"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/RSS_Edit"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/mytest" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="確認"
+        android:id="@+id/RSS_Sent"
+        android:layout_alignBottom="@+id/RSS_Edit"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/RSS_Edit" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mytest" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清空"
+        android:id="@+id/btn_clear"
+        android:layout_alignTop="@+id/listView"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/RSS_Edit" />
+
+</RelativeLayout>
